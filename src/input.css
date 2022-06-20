@@ -38,7 +38,7 @@
     @apply center-flex flex-col
   }
   .base-center {
-    @apply min-w-full min-h-screen bg-no-repeat
+    @apply w-full min-h-screen bg-no-repeat
   }
   .dark {
     @apply base-center center-col bg-skin-base bg-mobile-dark movil:bg-desktop-dark

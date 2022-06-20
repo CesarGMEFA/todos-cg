@@ -15,10 +15,10 @@ function Box() {
   const { 
     data,
   } = useContext(AppContext)
-
+  console.log(screen.width)
   
   return (
-    <section className='min-w-min text-lg font-bold'>
+    <section className='min-w-max text-lg font-bold'>
 
       <Header />
 
