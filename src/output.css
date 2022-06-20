@@ -491,7 +491,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
   background-image: url('assets/images/bg-mobile-dark.jpg');
@@ -518,7 +518,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
   background-image: url('assets/images/bg-mobile-light.jpg');
@@ -611,9 +611,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.min-w-min {
-  min-width: -webkit-min-content;
-  min-width: min-content;
+.min-w-max {
+  min-width: -webkit-max-content;
+  min-width: max-content;
 }
 
 .rotate-45 {
@@ -624,10 +624,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.cursor-none {
-  cursor: none;
 }
 
 .cursor-default {
