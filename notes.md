@@ -1,27 +1,5 @@
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
-App style
-
-.App {
-  width: 100%;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-}
-
-.AppDark {
-  background-image: url('../images/bg-mobile-dark.jpg');
-}
-
-.AppLight {
-  background-image: url('../images/bg-mobile-light.jpg');
-}
-
-@media screen and (min-width: 376px){
-  .AppDark {
-    background-image: url('../images/bg-desktop-dark.jpg');
-  } 
-
-  .AppLight {
-    background-image: url('../images/bg-desktop-light.jpg');
-  }
-}
+How to resolve ‘fatal: refusing to merge unrelated histories’
+Here the git command will look something like this: git pull origin master --allow-unrelated-histories.
+More info in https://komodor.com/learn/how-to-fix-fatal-refusing-to-merge-unrelated-histories-error/#:~:text=The%20fatal%3A%20refusing%20to%20merge,the%20pull%20request%20or%20clone.
