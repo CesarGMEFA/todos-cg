@@ -34,7 +34,7 @@ function Box() {
         ))}
       </ListTodos>
         
-      { screen.width <= 375 ? <MobileOptions /> : <DesktopOptions /> }
+      { screen.width <= 500 ? <MobileOptions /> : <DesktopOptions /> }
 
     </section>
   )
