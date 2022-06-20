@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@layer base {
+  :root {
+    --bg-base: hsl(235, 21%, 11%);
+    --bg-todos: hsl(235, 24%, 19%);
+    --blue: hsl(220, 98%, 61%);
+    --text-todos: hsl(234, 39%, 85%);
+    --text-hover: hsl(236, 33%, 92%);
+    --text: hsl(234, 11%, 52%);
+    --line: hsl(234, 11%, 52%);
+    --completed: hsl(233, 14%, 35%);
+    --circles: hsl(237, 14%, 26%);
+  }
+
+  .theme-l {
+    --bg-base: hsl(236, 33%, 92%);
+    --bg-todos: hsl(0, 0%, 98%);
+    --blue: hsl(220, 98%, 61%);
+    --text-todos: hsl(235, 19%, 35%);
+    --text-hover: hsl(236, 33%, 92%);
+    --text: hsl(236, 9%, 61%);
+    --line: hsl(236, 9%, 61%);
+    --completed: hsl(233, 11%, 84%);
+    --circles: hsl(236, 33%, 92%);
+  }
+}
+
+@layer components {
+  .center-flex {
+    @apply flex justify-center items-center
+  }
+  .center-col {
+    @apply center-flex flex-col
+  }
+  .base-center {
+    @apply min-w-full min-h-screen bg-no-repeat
+  }
+  .dark {
+    @apply base-center center-col bg-skin-base bg-mobile-dark movil:bg-desktop-dark
+  }
+  .ligth {
+    @apply theme-l base-center center-col bg-skin-base bg-mobile-light movil:bg-desktop-light
+  }
+  .border-color-gr {
+    @apply bg-gradient-to-br from-[#57ddff] to-[#c058f3];
+  }
+
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.Create_input:focus + .Create_add, .Create_add:hover {
+  display: block;
+  color: var(--text-todos);
+}
+
+.TodoItem:hover > .TodoItem_delete,
+.TodoItem_text:hover + .TodoItem_delete,
+.TodoItem_delete:hover {
+  display: block;
+}
