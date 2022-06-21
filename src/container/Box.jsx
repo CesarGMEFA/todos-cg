@@ -18,7 +18,7 @@ function Box() {
   console.log(screen.width)
   
   return (
-    <section className='min-w-max text-lg font-bold'>
+    <section className='text-lg font-bold w-3/4'>
 
       <Header />
 
@@ -27,8 +27,9 @@ function Box() {
       <ListTodos>
         {data.map( (todo, index) => (
           <TodoItem 
-            key={index}
+            key={todo.id}
             text={todo.text}
+            id={todo.id}
             completed={todo.completed}
           />
         ))}

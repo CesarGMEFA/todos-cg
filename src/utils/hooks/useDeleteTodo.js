@@ -5,8 +5,8 @@ const useDeleteTodo = () => {
 
   const { data, saveData } = useContext(AppContext)
 
-  const deleteTodo = (text) => {
-    const todoIndex = data.findIndex(todo => todo.text === text)
+  const deleteTodo = (id) => {
+    const todoIndex = data.findIndex(todo => todo.id === id)
     const newTodos = [...data]
     newTodos.splice(todoIndex, 1)
     saveData(newTodos)

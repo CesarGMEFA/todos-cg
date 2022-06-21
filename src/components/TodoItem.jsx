@@ -4,7 +4,7 @@ import DeleteTodosContext from '../contexts/DeleteTodosContext'
 
 import StatusTodos from '../contexts/StatusTodos'
 
-function TodoItem({ text, completed }) {
+function TodoItem({ text, id, completed }) {
 
   const { status } = useContext(StatusTodos)
   const { deleteTodo } = useContext(DeleteTodosContext)
@@ -15,7 +15,7 @@ function TodoItem({ text, completed }) {
         className={`rounded-full w-5 h-5 cursor-pointer center-col hover:border-color-gr
                     ${completed ? 'border-color-gr' : 'bg-circles'}`
                   }
-        onClick={() => status(text)}
+        onClick={() => status(id)}
       >
         {completed 
           ? <div className='w-4 h-4 bg-icon-check bg-no-repeat bg-center' /> 
@@ -26,7 +26,7 @@ function TodoItem({ text, completed }) {
         {text}
       </p>
       <div className={`TodoItem_delete hidden bg-icon-close bg-no-repeat bg-center w-5 h-5 ml-auto cursor-pointer`}
-           onClick={() => deleteTodo(text)}
+           onClick={() => deleteTodo(id)}
       />
     </li>
   )

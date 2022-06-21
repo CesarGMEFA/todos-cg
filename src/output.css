@@ -611,9 +611,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.min-w-max {
-  min-width: -webkit-max-content;
-  min-width: max-content;
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: min-content;
 }
 
 .rotate-45 {

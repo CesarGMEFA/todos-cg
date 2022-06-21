@@ -8,8 +8,8 @@ const useStatusTodos = () => {
     saveData,
   } = useContext(AppContext);
 
-  const status = (text) => {
-    const todoIndex = data.findIndex(todo => todo.text == text);
+  const status = (id) => {
+    const todoIndex = data.findIndex(todo => todo.id == id);
     const newTodos = [...data]
   
     if (data[todoIndex].completed === false) {
