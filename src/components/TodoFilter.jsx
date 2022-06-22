@@ -13,7 +13,7 @@ function TodoFilter() {
   return (
     <section 
       className={
-        screen.width <= 375  
+        screen.width <= 600  
         ? 'flex items-center justify-evenly bg-skin-todos py-4 px-4 mt-5 text-skin-text rounded shadow-lg'
         : 'text-skin-text text-base ml-16 mr-12'
       } 

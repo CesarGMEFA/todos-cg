@@ -18,8 +18,8 @@ function Box() {
   console.log(screen.width)
   
   return (
-    <section className='text-lg font-bold w-3/4'>
-
+    <section className='text-lg font-bold'>
+      {/* w-3/4 */}
       <Header />
 
       <CreateTodos />
@@ -35,7 +35,7 @@ function Box() {
         ))}
       </ListTodos>
         
-      { screen.width <= 500 ? <MobileOptions /> : <DesktopOptions /> }
+      { screen.width <= 600 ? <MobileOptions /> : <DesktopOptions /> }
 
     </section>
   )

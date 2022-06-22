@@ -491,7 +491,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
   background-image: url('assets/images/bg-mobile-dark.jpg');
@@ -518,7 +517,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
   background-image: url('assets/images/bg-mobile-light.jpg');
@@ -611,17 +609,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.w-3 {
-  width: 0.75rem;
-}
-
 .w-3\/4 {
   width: 75%;
-}
-
-.min-w-min {
-  min-width: -webkit-min-content;
-  min-width: min-content;
 }
 
 .rotate-45 {
@@ -821,6 +810,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/* w-full */
 
 * {
   margin: 0;
