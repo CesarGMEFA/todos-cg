@@ -27,6 +27,7 @@ function CreateTodos() {
 					onChange={onChange}
 					className=" Create_input text-skin-text bg-skin-todos outline-none px-3 py-1 w-4/5"
 					placeholder="Create a new todo..."
+					maxLength={30}
 				/>
 				{/* <div className={`block bg-icon-close bg-no-repeat bg-center w-5 h-5 ml-auto cursor-pointer rotate-45`}/> */}
 				<button 
