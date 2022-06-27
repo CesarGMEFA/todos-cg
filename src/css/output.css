@@ -478,6 +478,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .center-col {
   display: flex;
   align-items: center;
@@ -493,12 +499,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
-  background-image: url('assets/images/bg-mobile-dark.jpg');
+  background-image: url('../assets/images/bg-mobile-dark.jpg');
 }
 
 @media (min-width: 375px) {
   .dark {
-    background-image: url('assets/images/bg-desktop-dark.jpg');
+    background-image: url('../assets/images/bg-desktop-dark.jpg');
   }
 }
 
@@ -519,12 +525,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
   background-repeat: no-repeat;
   background-color: var(--bg-base);
-  background-image: url('assets/images/bg-mobile-light.jpg');
+  background-image: url('../assets/images/bg-mobile-light.jpg');
 }
 
 @media (min-width: 375px) {
   .ligth {
-    background-image: url('assets/images/bg-desktop-light.jpg');
+    background-image: url('../assets/images/bg-desktop-light.jpg');
   }
 }
 
@@ -555,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-5 {
@@ -607,10 +617,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4 {
   width: 1rem;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .rotate-45 {
@@ -691,11 +697,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-icon-close {
-  background-image: url('assets/images/icon-cross.svg');
+  background-image: url('../assets/images/icon-cross.svg');
 }
 
 .bg-icon-check {
-  background-image: url('assets/images/icon-check.svg');
+  background-image: url('../assets/images/icon-check.svg');
 }
 
 .bg-center {
@@ -727,6 +733,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-4 {

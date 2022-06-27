@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
-import FiltersContext from '../contexts/FiltersContext'
-import AppContext from '../contexts/AppContext'
+import React, { useContext } from 'react';
+import FiltersContext from '../contexts/FiltersContext';
 
 function TodoFilter() {
 
@@ -8,7 +7,7 @@ function TodoFilter() {
     all,
     active, 
     completed
-  } = useContext(FiltersContext)
+  } = useContext(FiltersContext);
 
   return (
     <section 
@@ -22,7 +21,7 @@ function TodoFilter() {
       <span className='cursor-pointer mx-5 hover:text-skin-blue' onClick={active} >Active</span>
       <span className='cursor-pointer hover:text-skin-blue' onClick={completed} >Completed</span>
     </section>
-  )
-}
+  );
+};
 
-export default TodoFilter
+export default TodoFilter;

@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 
-import DeleteTodosContext from '../contexts/DeleteTodosContext'
-
-import StatusTodos from '../contexts/StatusTodos'
+import DeleteTodosContext from '../contexts/DeleteTodosContext';
+import FiltersContext from '../contexts/FiltersContext';
+import StatusTodos from '../contexts/StatusTodos';
 
 function TodoItem({ text, id, completed }) {
 
-  const { status } = useContext(StatusTodos)
-  const { deleteTodo } = useContext(DeleteTodosContext)
+  const { status } = useContext(StatusTodos);
+  const { deleteTodo } = useContext(DeleteTodosContext);
 
   return (
     <li className='TodoItem flex items-center bg-skin-todos py-4 px-4 border-b-[.5px] border-gray-500 font-normal'>
@@ -29,7 +29,7 @@ function TodoItem({ text, id, completed }) {
            onClick={() => deleteTodo(id)}
       />
     </li>
-  )
-}
+  );
+};
 
-export default TodoItem
+export default TodoItem;

@@ -29,12 +29,12 @@ module.exports = {
       },
 
       backgroundImage: {
-        'desktop-dark': "url('assets/images/bg-desktop-dark.jpg')",
-        'desktop-light': "url('assets/images/bg-desktop-light.jpg')",
-        'mobile-dark': "url('assets/images/bg-mobile-dark.jpg')",
-        'mobile-light': "url('assets/images/bg-mobile-light.jpg')",
-        'icon-check': "url('assets/images/icon-check.svg')",
-        'icon-close': "url('assets/images/icon-cross.svg')",
+        'desktop-dark': "url('../assets/images/bg-desktop-dark.jpg')",
+        'desktop-light': "url('../assets/images/bg-desktop-light.jpg')",
+        'mobile-dark': "url('../assets/images/bg-mobile-dark.jpg')",
+        'mobile-light': "url('../assets/images/bg-mobile-light.jpg')",
+        'icon-check': "url('../assets/images/icon-check.svg')",
+        'icon-close': "url('../assets/images/icon-cross.svg')",
       },
       
       screens: {

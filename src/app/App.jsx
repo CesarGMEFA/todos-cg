@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import AppContext from '../contexts/AppContext';
-import contexto from "../contexts/contexto";
+import useTodos from "../utils/hooks/useTodos";
 import UI from "./UI";
 
 function App() {
   
 
   return (
-    <AppContext.Provider value={contexto()}>
+    <AppContext.Provider value={useTodos()}>
       <UI />
     </AppContext.Provider>
   )

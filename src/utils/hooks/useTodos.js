@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function contexto() {
+export default function useTodos() {
   
   let boolTheme;
   const localStorageTheme = localStorage.getItem('THEME');

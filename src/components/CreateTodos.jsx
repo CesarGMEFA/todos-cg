@@ -8,7 +8,7 @@ function CreateTodos() {
 	const [ text, setText ] = React.useState("");
 	const { addTodo } = React.useContext(AppContext);
 
-	const onChange = (e) => {
+	function onChange (e) {
 		setText(e.target.value);
 	}
 
@@ -29,7 +29,6 @@ function CreateTodos() {
 					placeholder="Create a new todo..."
 					maxLength={30}
 				/>
-				{/* <div className={`block bg-icon-close bg-no-repeat bg-center w-5 h-5 ml-auto cursor-pointer rotate-45`}/> */}
 				<button 
 					type="submit"
 					className="Create_add hidden ml-auto"
