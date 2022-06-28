@@ -1,12 +1,12 @@
 import React from "react";
 
-import AppContext from "../contexts/AppContext";
+import AddTodoContext from "../contexts/AddTodoContext";
 
 import { FiPlusCircle } from "react-icons/fi";
 
 function CreateTodos() {
 	const [ text, setText ] = React.useState("");
-	const { addTodo } = React.useContext(AppContext);
+	const { addTodo } = React.useContext(AddTodoContext);
 
 	function onChange (e) {
 		setText(e.target.value);

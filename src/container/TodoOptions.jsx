@@ -1,6 +1,8 @@
 import React from 'react';
+
 import OptionsContext from '../contexts/OptionsContext';
-import useTodoOptions from '../utils/hooks/useTodoOptions';
+
+import useTodoOptions from '../hooks/useTodoOptions';
 
 function TodoOptions({ children }) {
 

@@ -1,6 +1,11 @@
 import React, { useContext } from 'react';
 
 import AppContext from '../contexts/AppContext';
+import AddTodoContext from '../contexts/AddTodoContext';
+import ThemeContext from '../contexts/ThemeContext';
+
+import useAddTodo from '../hooks/useAddTodo';
+import useTheme from '../hooks/useTheme';
 
 import ListTodos from './ListTodos';
 import MobileOptions from './MobileOptions';
@@ -13,20 +18,20 @@ import EmptyList from '../components/EmptyList';
 
 
 function Box() {
-  const { 
-    data,
-  } = useContext(AppContext);
+  const { dataView } = useContext(AppContext);
   
   return (
     <section className='text-lg font-bold'>
       
       <Header />
 
-      <CreateTodos />
+      <AddTodoContext.Provider value={useAddTodo()}>
+        <CreateTodos />
+      </AddTodoContext.Provider>
 
       <ListTodos 
         onEmptyList={() => <EmptyList />}
-        data={data}
+        data={dataView}
         render={
           todo => (
             <TodoItem 

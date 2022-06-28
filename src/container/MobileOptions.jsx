@@ -1,8 +1,10 @@
 import React from 'react';
 
 import FiltersContext from '../contexts/FiltersContext';
+import ClearCompletedContext from '../contexts/ClearCompletedContext';
 
-import useFilters from '../utils/hooks/useFilters';
+import useFilters from '../hooks/useFilters';
+import useClearCompleted from '../hooks/useClearCompleted';
 
 import TodoOptions from './TodoOptions';
 
@@ -18,7 +20,9 @@ function MobileOptions() {
     <React.Fragment>
       <TodoOptions>
         <TodoCounter />
-        <ClearCompleted />
+        <ClearCompletedContext.Provider value={useClearCompleted()}>
+          <ClearCompleted />
+        </ClearCompletedContext.Provider>
       </TodoOptions>
 
       <FiltersContext.Provider value={activeFilter}>

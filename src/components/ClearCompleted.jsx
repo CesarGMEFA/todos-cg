@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import AppContext from '../contexts/AppContext'
+
+import ClearCompletedContext from '../contexts/ClearCompletedContext';
 
 function ClearCompleted() {
   const { 
     clearCompleted,
-  } = useContext(AppContext);
+  } = useContext(ClearCompletedContext);
 
   return (
     <React.Fragment>

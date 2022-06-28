@@ -1,26 +1,26 @@
 import { useContext } from "react";
-import AppContext from "../../contexts/AppContext";
+import AppContext from "../contexts/AppContext";
 
 const useFilters = () => {
 
-  const { setData } = useContext(AppContext);
+  const { setDataView } = useContext(AppContext);
   const localStorageData = localStorage.getItem('DATA_v1');
 
   const all = () => {
-    setData(JSON.parse(localStorageData));
-  }
+    setDataView(JSON.parse(localStorageData));
+  };
 
   const active = () => {
     const data = JSON.parse(localStorageData)
     const newTodos = data.filter(todo => !todo.completed)
-    setData(newTodos)
-  }
+    setDataView(newTodos)
+  };
 
   const completed = () => {
     const data = JSON.parse(localStorageData)
     const newTodos = data.filter(todo => todo.completed)
-    setData(newTodos)
-  }
+    setDataView(newTodos)
+  };
 
   return {
     all,

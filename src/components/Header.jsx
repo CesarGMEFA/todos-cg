@@ -1,8 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
+
+import ThemeContext from '../contexts/ThemeContext';
 import AppContext from '../contexts/AppContext';
 
 function Header() {
-  const { theme, saveTheme } = useContext(AppContext);
+  const { theme, saveTheme } = useContext(ThemeContext);
 
   return (
     <div className='flex items-center justify-between'>

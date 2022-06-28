@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import AppContext from '../../contexts/AppContext';
+import AppContext from '../contexts/AppContext';
 
 const useStatusTodos = () => {
 
@@ -9,6 +9,7 @@ const useStatusTodos = () => {
   } = useContext(AppContext);
 
   const status = (id) => {
+
     const todoIndex = data.findIndex(todo => todo.id == id);
     const newTodos = [...data]
   

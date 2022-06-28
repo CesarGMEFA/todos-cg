@@ -1,4 +1,4 @@
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch
 
 How to resolve ‘fatal: refusing to merge unrelated histories’
 Here the git command will look something like this: git pull origin master --allow-unrelated-histories.

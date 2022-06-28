@@ -1,6 +1,11 @@
 import React from "react";
+
 import AppContext from '../contexts/AppContext';
-import useTodos from "../utils/hooks/useTodos";
+import ThemeContext from '../contexts/ThemeContext';
+
+import useTodos from "../hooks/useTodos";
+import useTheme from "../hooks/useTheme";
+
 import UI from "./UI";
 
 function App() {
@@ -8,7 +13,9 @@ function App() {
 
   return (
     <AppContext.Provider value={useTodos()}>
-      <UI />
+      <ThemeContext.Provider value={useTheme()}>
+        <UI />
+      </ThemeContext.Provider>
     </AppContext.Provider>
   )
 }

@@ -1,9 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
+
+import ThemeContext from '../contexts/ThemeContext';
+
+
 import Box from '../container/Box';
-import AppContext from '../contexts/AppContext';
 
 function UI() {
-  const { theme } = useContext(AppContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <div className={theme ? "dark" : "ligth"}
     >

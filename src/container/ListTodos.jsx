@@ -1,12 +1,12 @@
-import React, { Children } from 'react';
+import React from 'react';
 
 import StatusTodos from '../contexts/StatusTodos';
 import DeleteTodosContext from '../contexts/DeleteTodosContext';
 import FiltersContext from '../contexts/FiltersContext';
 
-import useStatusTodos from '../utils/hooks/useStatusTodos';
-import useDeleteTodo from '../utils/hooks/useDeleteTodo';
-import useFilters from '../utils/hooks/useFilters';
+import useStatusTodos from '../hooks/useStatusTodos';
+import useDeleteTodo from '../hooks/useDeleteTodo';
+import useFilters from '../hooks/useFilters';
 
 function ListTodos(props) {
 

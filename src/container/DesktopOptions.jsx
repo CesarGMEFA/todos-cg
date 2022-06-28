@@ -1,31 +1,39 @@
 import React from 'react';
+
 import OptionsContext from '../contexts/OptionsContext';
 import FiltersContext from '../contexts/FiltersContext';
+import ClearCompletedContext from '../contexts/ClearCompletedContext';
 
-import useTodoOptions from '../utils/hooks/useTodoOptions';
-import useFilters from '../utils/hooks/useFilters';
+import useTodoOptions from '../hooks/useTodoOptions';
+import useFilters from '../hooks/useFilters';
+import useClearCompleted from '../hooks/useClearCompleted';
 
 import TodosBox from './TodosBox';
+
 import TodoCounter from '../components/TodoCounter';
 import TodoFilter from '../components/TodoFilter';
 import ClearCompleted from '../components/ClearCompleted';
 
 function DesktopOptions() {
 
-  const useOptions = useTodoOptions()
-  const activeFilter = useFilters()
-
   return (
-    <OptionsContext.Provider value={useOptions}>
+    <OptionsContext.Provider value={useTodoOptions()}>
       <TodosBox>
+        
         <TodoCounter />
-        <FiltersContext.Provider value={activeFilter}>
+
+        <FiltersContext.Provider value={useFilters()}>
           <TodoFilter />
         </FiltersContext.Provider> 
-        <ClearCompleted />
+
+        <ClearCompletedContext.Provider value={useClearCompleted()}>
+          <ClearCompleted />
+        </ClearCompletedContext.Provider>
+
       </TodosBox>
     </OptionsContext.Provider>
-  )
+  );
+  
 };
 
 export default DesktopOptions;
