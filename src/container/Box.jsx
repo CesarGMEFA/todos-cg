@@ -2,10 +2,8 @@ import React, { useContext } from 'react';
 
 import AppContext from '../contexts/AppContext';
 import AddTodoContext from '../contexts/AddTodoContext';
-import ThemeContext from '../contexts/ThemeContext';
 
 import useAddTodo from '../hooks/useAddTodo';
-import useTheme from '../hooks/useTheme';
 
 import ListTodos from './ListTodos';
 import MobileOptions from './MobileOptions';

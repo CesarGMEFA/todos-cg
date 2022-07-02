@@ -18,16 +18,21 @@ function MobileOptions() {
   
   return (
     <React.Fragment>
+
       <TodoOptions>
+
         <TodoCounter />
+
         <ClearCompletedContext.Provider value={useClearCompleted()}>
           <ClearCompleted />
         </ClearCompletedContext.Provider>
+        
       </TodoOptions>
 
       <FiltersContext.Provider value={activeFilter}>
         <TodoFilter />
       </FiltersContext.Provider> 
+
     </React.Fragment>
   )
 }

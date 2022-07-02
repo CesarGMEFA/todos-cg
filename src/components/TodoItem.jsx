@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 
 import DeleteTodosContext from '../contexts/DeleteTodosContext';
-import FiltersContext from '../contexts/FiltersContext';
 import StatusTodos from '../contexts/StatusTodos';
 
 function TodoItem({ text, id, completed }) {

@@ -20,7 +20,7 @@ export default function useTodos() {
     const stringData = JSON.stringify(newData);
     localStorage.setItem('DATA_v1', stringData);
     setData(newData);
-    setDataView(newData);
+    // setDataView(newData);
   }
 
   return {
@@ -28,6 +28,6 @@ export default function useTodos() {
     setData,
     dataView,
     setDataView,
-    saveData
+    saveData,
   }
 }

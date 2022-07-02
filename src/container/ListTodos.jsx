@@ -18,12 +18,14 @@ function ListTodos(props) {
     <StatusTodos.Provider value={StatusState}>
       <DeleteTodosContext.Provider value={deleteTodo}>
         <FiltersContext.Provider value={activeFilter}>
+
           <section className='rounded-t overflow-hidden shadow-lg'>
             { (!props.data.length) && props.onEmptyList() }
             <ul>
               {props.data.map( props.render )}
             </ul>
           </section>
+          
         </FiltersContext.Provider>
       </DeleteTodosContext.Provider>
     </StatusTodos.Provider>
