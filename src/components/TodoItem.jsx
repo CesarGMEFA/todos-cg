@@ -9,7 +9,7 @@ function TodoItem({ text, id, completed }) {
   const { deleteTodo } = useContext(DeleteTodosContext);
 
   return (
-    <li className='TodoItem flex items-center bg-skin-todos py-4 px-4 border-b-[.5px] border-gray-500 font-normal'>
+    <li className='TodoItem flex items-center bg-skin-todos py-4 px-4 border-b-[.5px] border-gray-500 font-normal cursor-move'>
       <div
         className={`rounded-full w-5 h-5 cursor-pointer center-col hover:border-color-gr
                     ${completed ? 'border-color-gr' : 'bg-circles'}`

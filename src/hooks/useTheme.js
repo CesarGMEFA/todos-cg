@@ -11,7 +11,6 @@ const useTheme = () => {
   };
 
   const [ theme, setTheme ] = useState(boolTheme);
-  console.log(theme);
   
   function saveTheme(newTheme) {
     const stringTheme = JSON.stringify(newTheme);
