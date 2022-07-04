@@ -16,7 +16,7 @@ import EmptyList from '../components/EmptyList';
 
 
 function Box() {
-  const { dataView } = useContext(AppContext);
+  const { data, dataView, saveData, setDataView } = useContext(AppContext);
   
   return (
     <section className='text-lg font-bold'>
@@ -29,7 +29,9 @@ function Box() {
 
       <ListTodos 
         onEmptyList={() => <EmptyList />}
-        data={dataView}
+        setDataView={setDataView}
+        saveData={saveData}
+        dataView={dataView}
         render={
           todo => (
             <TodoItem 
@@ -43,7 +45,7 @@ function Box() {
       />
         
       { screen.width <= 600 ? <MobileOptions /> : <DesktopOptions /> }
-
+      <p className='text-center mt-5 text-skin-text'>Drag and drop to reorder list</p>
     </section>
   );
 };

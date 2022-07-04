@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
+
 import FiltersContext from '../contexts/FiltersContext';
 
-function TodoFilter() {
+import { clickColor } from '../utils/clickColor';
+clickColor();
 
+function TodoFilter() {
   const { 
     all,
     active, 
@@ -17,9 +20,9 @@ function TodoFilter() {
         : 'text-skin-text text-base ml-16 mr-12'
       } 
     >
-      <span className='cursor-pointer hover:text-skin-blue' onClick={all}>All</span>
-      <span className='cursor-pointer mx-5 hover:text-skin-blue' onClick={active} >Active</span>
-      <span className='cursor-pointer hover:text-skin-blue' onClick={completed} >Completed</span>
+      <span className='todoFilter cursor-pointer' onClick={all}>All</span>
+      <span className='todoFilter cursor-pointer mx-5' onClick={active} >Active</span>
+      <span className='todoFilter cursor-pointer' onClick={completed} >Completed</span>
     </section>
   );
 };
