@@ -1,8 +1,7 @@
 function clickColor() {
   window.onload = function () {
-    const btns = document.querySelectorAll('.todoFilter');
+    const btnsFilters = document.querySelectorAll('.todoFilter');
     
-    console.log('btns: ', btns)
     const cleanColor = () => {
         if( document.querySelector('.text-skin-blue') ){
             const btnSelected = document.querySelector('.text-skin-blue');
@@ -20,7 +19,7 @@ function clickColor() {
   
     };
   
-    btns.forEach( btn => btn.addEventListener('click', changeColor) )
+    btnsFilters.forEach( btnFilter => btnFilter.addEventListener('click', changeColor) )
   }
 }
 
