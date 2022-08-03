@@ -32,7 +32,7 @@ function ListTodos({  dataView, render, onEmptyList, saveData, setDataView }) {
                 chosenClass='selectedDragDrop' 
                 dragClass='opacity-0'
                 list={dataView} 
-                setList={saveData}
+                setList={setDataView}
                 group='todos-list'
               >
                 {dataView.map( render )}
