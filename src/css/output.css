@@ -508,6 +508,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1441px) {
+  .dark {
+    background-size: contain;
+  }
+}
+
 .ligth {
   --bg-base: hsl(236, 33%, 92%);
   --bg-todos: hsl(0, 0%, 98%);
@@ -531,6 +537,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 375px) {
   .ligth {
     background-image: url('../assets/images/bg-desktop-light.jpg');
+  }
+}
+
+@media (min-width: 1441px) {
+  .ligth {
+    background-size: contain;
   }
 }
 
@@ -862,8 +874,4 @@ body {
   --tw-gradient-from: #57ddff;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(87 221 255 / 0));
   --tw-gradient-to: #c058f3;
-}
-
-.hover\:text-skin-blue:hover {
-  color: var(--blue);
 }

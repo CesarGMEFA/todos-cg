@@ -8,8 +8,6 @@ import useTheme from "../hooks/useTheme";
 
 import UI from "./UI";
 
-import { clickColor } from "../utils/clickColor"
-
 function App() {
 
   return (

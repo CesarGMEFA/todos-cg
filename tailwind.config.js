@@ -38,7 +38,8 @@ module.exports = {
       },
       
       screens: {
-        'movil': '375px'
+        'movil': '375px',
+        'bgImg': '1441px',
       }
     },
   },

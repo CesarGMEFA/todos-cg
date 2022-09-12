@@ -41,10 +41,10 @@
     @apply  min-h-screen bg-no-repeat
   }
   .dark {
-    @apply base-center center-col bg-skin-base bg-mobile-dark movil:bg-desktop-dark
+    @apply base-center center-col bg-skin-base bg-mobile-dark movil:bg-desktop-dark bgImg:bg-contain
   }
   .ligth {
-    @apply theme-l base-center center-col bg-skin-base bg-mobile-light movil:bg-desktop-light
+    @apply theme-l base-center center-col bg-skin-base bg-mobile-light movil:bg-desktop-light bgImg:bg-contain
   }
   .border-color-gr {
     @apply bg-gradient-to-br from-[#57ddff] to-[#c058f3];
