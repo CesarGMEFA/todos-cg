@@ -9,7 +9,7 @@ function Header() {
     <div className='flex items-center justify-between'>
       <h1 className='text-white text-3xl tracking-[.30em]'>TODO</h1>
       <button type='button' onClick={() => saveTheme(!theme)}>
-        <img className='w-6' src={theme ? 'assets/images/icon-sun.svg' : 'assets/images/icon-moon.svg'}/>
+        <img className='w-6' src={theme ? 'assets/images/icon-sun.svg' : 'assets/images/icon-moon.svg'} alt="icon to change for dark or ligth mode"/>
       </button>
     </div>
   )
