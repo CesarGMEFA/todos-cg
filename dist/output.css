@@ -626,6 +626,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.cursor-move {
+  cursor: move;
+}
+
 .cursor-default {
   cursor: default;
 }
@@ -747,6 +751,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -796,9 +804,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--text-todos);
 }
 
+.text-skin-blue {
+  color: var(--blue);
+}
+
 .line-through {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-lg {
@@ -838,6 +854,12 @@ body {
 .TodoItem_text:hover + .TodoItem_delete,
 .TodoItem_delete:hover {
   display: block;
+}
+
+.selectedDragDrop {
+  -webkit-transform: scale(1.02) rotate(-1deg);
+          transform: scale(1.02) rotate(-1deg);
+  box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
 }
 
 .hover\:border-color-gr:hover {

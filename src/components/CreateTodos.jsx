@@ -14,6 +14,9 @@ function CreateTodos() {
 
 	function onAdd(e) {
 		e.preventDefault();
+		if (text === "") {
+			return
+		}
 		addTodo(text);
 		setText("");
 	}
